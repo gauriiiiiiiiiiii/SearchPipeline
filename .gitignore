@@ -1,0 +1,9 @@
+# run output and local browser state
+output/
+.chrome_profile/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/

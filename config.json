@@ -1,0 +1,36 @@
+{
+  "_help": "templates: {city} is replaced by each city name. cities: name used in the query -> Google's canonical location (only used by --engine google). pages: result pages per query, 10 links each.",
+
+  "templates": [
+    "\"upcoming events\" coworking {city}",
+    "\"upcoming events\" incubator {city}",
+    "\"past events\" \"startup\" {city}"
+  ],
+
+  "cities": {
+    "Delhi":      "New Delhi,Delhi,India",
+    "Gurugram":   "Gurugram,Haryana,India",
+    "Noida":      "Noida,Uttar Pradesh,India",
+    "Mumbai":     "Mumbai,Maharashtra,India",
+    "Pune":       "Pune,Maharashtra,India",
+    "Bangalore":  "Bengaluru,Karnataka,India",
+    "Hyderabad":  "Hyderabad,Telangana,India",
+    "Chennai":    "Chennai,Tamil Nadu,India",
+    "Kolkata":    "Kolkata,West Bengal,India",
+    "Ahmedabad":  "Ahmedabad,Gujarat,India",
+    "Jaipur":     "Jaipur,Rajasthan,India",
+    "Chandigarh": "Chandigarh,Chandigarh,India",
+    "Kochi":      "Kochi,Kerala,India",
+    "Indore":     "Indore,Madhya Pradesh,India"
+  },
+
+  "pages": 3,
+
+  "extract": {
+    "_help": "follow_links_per_page: when a result page has no structured events, how many event links on it to open. keep_outside_india: keep events whose address is in another country. description_chars: trim descriptions to this length.",
+    "follow_links_per_page": 15,
+    "keep_outside_india": false,
+    "description_chars": 300,
+    "seconds_between_hits_same_site": 2.0
+  }
+}
